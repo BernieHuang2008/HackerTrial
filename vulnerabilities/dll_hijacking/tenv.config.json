@@ -1,0 +1,23 @@
+{
+  "tree": {
+    "C#r": {
+      "TargetApp#rx": {
+        "!FILE!0": "target/office.exe"
+      },
+      "Windows#r": {
+        "System32": {
+          "!FILE!0": "target/target.dll"
+        },
+        "System16Folder#": {}
+      },
+      "NewFolder#rwx": {
+        "!FILE!0": "target/test.doc",
+        "!FILE!1": "target/target.dll"
+      },
+      "!FILE!0": "PATH.SYS"
+    },
+    "HackerWorkspace#rwx": {
+      "!FILE!0": "target/trojan.dll"
+    }
+  }
+}

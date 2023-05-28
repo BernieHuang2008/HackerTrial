@@ -1,0 +1,2 @@
+www/cgi-bin/hacknet_irc8661.txt
+www/cgi-bin/admin_password.txt

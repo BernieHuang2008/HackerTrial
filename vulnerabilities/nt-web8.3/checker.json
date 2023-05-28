@@ -1,0 +1,16 @@
+{
+  "steps": [
+    {
+      "note": "check 1",
+      "action": "check file content",
+      "group": "g1",
+      "parameters": {
+        "path": "tenv/HackerWorkspace/chat_his.txt",
+        "content": "#217453 +(8661)- [X]\n\n<@Chin^> My sister caught me jacking off the other week and calls me a pervert\n <@Chin^> just the other day i walked into my room and caught my sister masturbating\n <@Chin^> So she calls me a pervert again?!?\n <@Chin^> there is no justice in the world...\n"
+      }
+    }
+  ],
+  "group_check": {
+    "g1": [1, 1]
+  }
+}

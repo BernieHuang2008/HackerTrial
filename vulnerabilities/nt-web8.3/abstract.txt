@@ -1,0 +1,5 @@
+CVE-1999-0012
+CERT:CA-98.04.Win32.WebServers
+MISC:https://exchange.xforce.ibmcloud.com/vulnerabilities/CVE-1999-0012
+XF:nt-web8.3 (709)
+Some web servers under Microsoft Windows allow remote attackers to bypass access restrictions for files with long file names.

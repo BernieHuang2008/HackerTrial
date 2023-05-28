@@ -1,0 +1,25 @@
+{
+  "tree": {
+    "www#r": {
+      "server_root": {
+        "!FILE!0": "webpage/index.html",
+        "!FILE!1": "webpage/404.html",
+        "!FILE!2": "server/restricted_files.txt",
+        "cgi-bin#": {
+          "!FILE!0": "server/greeting.py",
+          "!FILE!1": "server/hacknet_irc8661.txt"
+        }
+      },
+      "server_1": {
+        "!FILE!0": "webpage/index.htm",
+        "!FILE!1": "webpage/404.htm",
+        "!FILE!2": "server/restri_1.txt",
+        "cgi-bin#r": {
+          "!FILE!0": "server/greeting.py",
+          "!FILE!1": "server/hackne_1.txt"
+        }
+      }
+    },
+    "HackerWorkspace#rwx": {}
+  }
+}

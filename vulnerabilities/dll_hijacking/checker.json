@@ -1,0 +1,75 @@
+{
+  "steps": [
+    {
+      "note": "check exe",
+      "action": "check file content",
+      "group": "g1",
+      "parameters": {
+        "path": "tenv/C/TargetApp/office.exe",
+        "content": "this is 'office.exe'.\n"
+      }
+    },
+    {
+      "note": "check doc",
+      "action": "check file content",
+      "group": "g1",
+      "parameters": {
+        "path": "tenv/C/NewFolder/test.doc",
+        "content": "this is the 'test.doc'.\n"
+      }
+    },
+    {
+      "note": "check 1",
+      "action": "check file content",
+      "parameters": {
+        "path": "tenv/C/TargetApp/target.dll",
+        "content": "this is 'trojan.dll'.\n"
+      }
+    },
+    {
+      "note": "check 2",
+      "action": "check file content",
+      "group": "g2",
+      "parameters": {
+        "path": "tenv/C/NewFolder/target.dll",
+        "content": "this is 'trojan.dll'.\n"
+      }
+    },
+    {
+      "note": "check 3",
+      "action": "check file content",
+      "parameters": {
+        "path": "tenv/C/Windows/System32/target.dll",
+        "content": "this is 'trojan.dll'.\n"
+      }
+    },
+    {
+      "note": "check 4",
+      "action": "check file content",
+      "parameters": {
+        "path": "tenv/C/Windows/System16Folder/target.dll",
+        "content": "this is 'trojan.dll'.\n"
+      }
+    },
+    {
+      "note": "check 5",
+      "action": "check file content",
+      "parameters": {
+        "path": "tenv/C/Windows/target.dll",
+        "content": "this is 'trojan.dll'.\n"
+      }
+    },
+    {
+      "note": "check 6",
+      "action": "check file content",
+      "parameters": {
+        "path": "tenv/C/PATH/target.dll",
+        "content": "this is 'trojan.dll'.\n"
+      }
+    }
+  ],
+  "group_check": {
+    "g1": [2, 2],
+    "g2": [1, 1]
+  }
+}
