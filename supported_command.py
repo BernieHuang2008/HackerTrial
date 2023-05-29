@@ -1,5 +1,6 @@
 import os
 import shutil
+import filesystem as fs
 
 
 def ls(d, args):
@@ -7,9 +8,9 @@ def ls(d, args):
         print("Permission denied")
         raise Exception('Error 0x003')
     if args:
-        lst = os.listdir(cd(d, args))
+        lst = fs.listdir(cd(d, args))
     else:
-        lst = os.listdir(d)
+        lst = fs.listdir(d)
     if '.config' in lst:
         lst.remove('.config')
     print('\n'.join(lst))
@@ -39,7 +40,7 @@ def cd(d, args):
             for name in args[0].split('/'):
                 d = cd(d, [name])
             return d
-        elif args[0] in os.listdir(d) and os.path.isdir(d + '/' + args[0]):
+        elif args[0] in fs.listdir(d) and os.path.isdir(d + '/' + args[0]):
             return d + '/' + args[0]
         else:
             print('No such file or directory')
