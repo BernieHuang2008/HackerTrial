@@ -110,13 +110,19 @@ class FileSystem:
             'type': 'folder',
             'body': {}
         }
-        self.set_authority(self.current_dir_path + '/' + new_dir, self.get_authority(self.current_dir_path))
+        self.set_authority(self.current_dir_path + '/' +
+                           new_dir, self.get_authority(self.current_dir_path))
 
 
 class File:
-    def __init__(self, path: str):
+    def __init__(self, content: str):
+        self.content = content
+
+    @classmethod
+    def load(cls, path: str):
         with open(path, 'r') as f:
-            self.content = f.read()
+            content = f.read()
+        return cls(content)
 
     def __getitem__(self, item):
         if item == 'content':
